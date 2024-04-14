@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risma - UI/UX Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="navbar-logo">Design</div>
+            <ul class="navbar-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#portofolio">Portfolio</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+            <div class="navbar-toggle">&#9776;</div>
+        </nav>
+
+        <section id="home">
+            <h1>
+                <ul>Hello, I’m a</ul>
+                <ul>UI/UX Designer</ul>
+            </h1>
+            <h2>
+                <ul>Why should you hire me?</ul>
+            </h2>
+            <ul><button>Hire Me</button></ul>
+        </section>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <img src="img/Risma.jpeg" alt="Gambar" style="width: 200px; height: auto;">
+
+        <p>I'm Risma, a UI/UX designer who loves creating beautiful and meaningful products through design. As an information engineering graduate, I am well-versed in code and software development. For me, design is not just about aesthetics, but also the
+            value it brings, the research and data behind it, and its practicality for development.</p>
+        <p>Furthermore, my proficiency extends beyond mere aesthetics; I am equally adept at optimizing user journeys and enhancing usability through intuitive navigation and interaction design. By collaborating closely with cross-functional teams and stakeholders,
+            I ensure that every design decision is informed by user insights and aligns seamlessly with project goals and objectives. With a passion for creating impactful digital experiences, I am committed to pushing the boundaries of design excellence
+            and driving measurable results for clients and end-users alike.</p>
+        <p>In addition to my dedication to crafting visually stunning products, I excel in optimizing user experiences and enhancing usability through intuitive navigation and interaction design. By fostering close collaboration with cross-functional teams
+            and stakeholders, I ensure that each design decision is grounded in user insights and seamlessly aligns with project .</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <ul class="skill-list">
+
+            <p>User Research: <progress value="95" max="100" style="color: red;">95%</progress></p>
+            <p>Copywriting: <progress value="80" max="100">80%</progress></p>
+            <p>Multi-Platform: <progress value="85" max="100">85%</progress></p>
+            <p>Icon Design: <progress value="98" max="100">98%</progress> </p>
+            <p>Wireframing: <progress value="90" max="100">90%</progress></p>
+            <p>Usability Testing: <progress value="88" max="100">88%</progress></p>
+
+        </ul>
+
+        <section id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="portfolio-images">
+                <img src="img/gambar1.png" alt="Gambar" class="portfolio-image">
+                <img src="img/gambar2.png" alt="Gambar" class="portfolio-image">
+                <img src="img/gambar3.png" alt="Gambar" class="portfolio-image">
+                <img src="img/gambar2.png" alt="Gambar" class="portfolio-image">
+                <img src="img/gambar1.png" alt="Gambar" class="portfolio-image">
+
+            </div>
+        </section>
+        <section id="testimoni">
+            <h1>Testimoni</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td style="width: 33%;">
+                            <p>Jauza Hasna</p>
+                            <p>“The resulting design is neat and the work is fast. The best thing”</p>
+                        </td>
+                        <td style="width: 33%;">
+                            <p> Shilla Hanipa Amalia</p>
+                            <p>“According to request, but there are some things that need to be revised first”</p>
+                        </td>
+                        <td style="width: 33%;">
+                            <p>Anwar Robiansyah</p>
+                            <p>“Very satisfied with using RD Design services”</p>
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+            <br>
+            <form action="/proses_form.php" method="post">
+                <style>
+                    .stars {
+                        position: relative;
+                        display: inline-block;
+                    }
+                    
+                    .star {
+                        display: none;
+                    }
+                    
+                    .star-label {
+                        display: inline-block;
+                        font-size: 2em;
+                        color: #fdcb2c;
+                        cursor: pointer;
+                    }
+                </style>
+                </head>
+
+                <body>
+                    <div>
+                        <p id="rating-text">Rate this project</p>
+                    </div>
+                    <div class="rating-container">
+                        <input type="hidden" id="rating-input" name="rating" value="0">
+                        <div class="stars">
+                            <label for="star-5" class="star-label">
+                            <input type="radio" id="star-5" name="star" value="5" class="star" />
+                            ★
+                        </label>
+                            <label for="star-4" class="star-label">
+                            <input type="radio" id="star-4" name="star" value="4" class="star" />
+                            ★
+                        </label>
+                            <label for="star-3" class="star-label">
+                            <input type="radio" id="star-3" name="star" value="3" class="star" />
+                            ★
+                        </label>
+                            <label for="star-2" class="star-label">
+                            <input type="radio" id="star-2" name="star" value="2" class="star" />
+                            ★
+                        </label>
+                            <label for="star-1" class="star-label">
+                            <input type="radio" id="star-1" name="star" value="1" class="star" />
+                            ★
+                        </label><br>
+
+                            <label for="nama"><br>Nama organisasi atau perusahaan:<br> </label><br>
+                            <input type="text" id="nama" name="nama"><br><br>
+
+                            <label for="testimoni">Testimoni:<br></label><br>
+                            <textarea id="testimoni" name="tertimoni" rows="4" cols="50"></textarea><br><br>
+                            <input type="submit" value="Upload" class="upload-button">
+
+            </form>
+        </section>
+        <section id="Contact">
+
+            <h1>Contact</h1>
+            <div class="container">
+                <div class="contact-form">
+                    <h3>Contact <span>Us</span></h3>
+                    <p>I am available for work. Contact me via telpon number : 082117836231 or e-mail : mimrisma311@gmail.com</p>
+                    <img src="img/sosmed.png">
+                </div>
+
+
+                <form action="">
+                    <div class="form">
+                        <input type="text" name="name" placeholder="Your Name" maxlength="20" required>
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                        <input type="tel" name="hp" id="hp" placeholder="082xxxxxx" maxlength="13" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        <input type="submit" name="" value="submit" class="btn"></div>
+                </form>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="img/logonew.png" alt="logo" style="width: 30px;height: auto;">
+                    <span style="color: black;">Design</span>
+                    <br>
+                    <img src="img/user.png" alt="user" style="width: 30px;height: auto;">
+                    <br><span style="color: black;">Risma</span>
+                </div>
+
+                <div class="social-media">
+                    <h4 style="color: black;">Follow Us:</h4>
+                    <a href="#" target="_blank"><img src="img/fb.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="img/wa.png" alt="WhatsApp"></a>
+                    <a href="#" target="_blank"><img src="img/ig.png" alt="Instagram"></a>
+                </div>
+                <div class="contact-footer">
+                    <p>Contact:</p>
+                    <p>Email: mimrisma311@gmail.com</p>
+                    <p>Phone: (+62)821-1783-6231</p>
+                </div>
+                <div class="foot">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portofolio</a>
+                    <a href="#testimoni">Testimoni</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    </body>
+
+</html>
